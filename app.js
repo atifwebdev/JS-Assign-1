@@ -14,10 +14,16 @@ document.getElementById("p-msg").innerText = message;
 
 // 2 - Ask the user to enter a number, then print table of the provided number in a console window.
 
+// Print table using loop:
 var finalOutput = "";
 var numGiven = +prompt("Enter any number to generate a table.");
 for( var i = 1; i <= 10; i++){
     finalOutput += numGiven + " x " + i + " = " + numGiven*i + "\n";    //if print in DOM use <br>
 }
 console.log(finalOutput);
-// document.getElementById("p-table").innerHTML = finalOutput;
+
+
+// Print any table using Increment technique like count++ OR ++count:
+var count = 0;
+var ptintTable = (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count) + "\n" + (numGiven + " x " + ++count + " = " + numGiven*count);
+console.log(ptintTable);
